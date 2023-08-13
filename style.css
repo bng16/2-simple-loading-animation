@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loder{
+    display: flex;
+    gap: 20px;
+}
+
+.loding{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: load 0.8s ease infinite;
+}
+
+.bl1{
+    animation-delay: 0.3s;
+}
+
+.bl2{
+    animation-delay: 0.4s;
+}
+
+.bl3{
+    animation-delay: 0.5s;
+}
+@keyframes load{
+    0%{
+        width: 30px;
+        height: 30px;
+    }
+    50%{
+        width: 20px;
+        height: 20px;        
+    }
+}
